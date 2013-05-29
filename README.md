@@ -1,22 +1,22 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com/) skeleton for [DocPad](https://github.com/bevry/docpad)
+# A vanilla Docpad skeleton with Grunt build, based on [HTML5 Boilerplate with Grunt](https://github.com/lukekarrys/html5-boilerplate.docpad)
 Bare essentials for building a modern website with best practices
 
 ## Why the fork?
-This fork adds [Grunt](http://gruntjs.com/) to show an example of taking the HTMLBP and minifying and concatenating all the JS and CSS assets into single files and including those in the layout.
+This fork keeps the Grunt child process and config file structure but updates them with the 0.4.0 *Gruntfile.js* layout. Concat and min have been replaced  with [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify). All other dependencies have been update to the latest builds.
 
 ## What is different?
 
-### `grunt-config.json`
+##### `grunt-config.json`
 - This file is contains the object passed to `grunt.initConfig` in `grunt.js`. It has been put into its own file since it is used in `docpad.coffee` to build file lists for inclusion in the layout and deleting unused files.
 
-### `grunt.js`
+##### `Gruntfile.js`
 - This is the Grunt file. It runs `initConfig` with the `grunt-config.json` object. It also registers a `default` task with all the keys from the config file.
 
-### `docpad.coffee`
-- I added the helper functions [`getGruntedStyles`]() and [`getGruntedScripts`](). These functions will return all the compiled assets that contain `.min.(css|js)` with the correct base path.
+##### `docpad.coffee`
+-  **These have been commented out until I have time to update these to work with the Uglify task syntax** I added the helper functions [`getGruntedStyles`]() and [`getGruntedScripts`](). These functions will return all the compiled assets that contain `.min.(css|js)` with the correct base path.
 - A [`writeAfter`]() DocPad event. It is based on [this gist](https://gist.github.com/3898915), with some additional functionality. It will run the `default` grunt command. Then it will use your `grunt-config.json` to delete the `src` files since they are no longer needed. It will also delete any empty directories in the 'out/' directory.
 
-### `layouts/default.html.eco`
+##### `layouts/default.html.eco`
 - The script and style blocks have been replaced with calls to the helper functions described above.
 
 
@@ -27,8 +27,8 @@ This fork adds [Grunt](http://gruntjs.com/) to show an example of taking the HTM
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/lukekarrys/html5-boilerplate.docpad.git
-	cd html5-boilerplate.docpad
+	git clone git://github.com/ourmaninamsterdam/docpad-grunt-skeleton.git
+	cd docpad-grunt-skeleton
 	npm install
 	docpad run
 	```
