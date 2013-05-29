@@ -1,9 +1,9 @@
-# A vanilla Docpad skeleton with Grunt build, based on [Luke Karrys' HTML5 Boilerplate with Grunt](https://github.com/lukekarrys/html5-boilerplate.docpad)
+# A vanilla Docpad skeleton with Grunt build
 
-This is an adaptation of Luke Karrys' H5BP [Luke Karrys' HTML5 Boilerplate with Grunt](https://github.com/lukekarrys/html5-boilerplate.docpad), without H5BP.
+This is an adaptation of [Luke Karrys' HTML5 Boilerplate with Grunt Docpad skeleton](https://github.com/lukekarrys/html5-boilerplate.docpad), with H5BP removed.
 
 ## Why the fork?
-This fork keeps the Grunt child process and config file structure but updates them with the updated 0.4.0 *Gruntfile.js* file syntax. Concat and min have been replaced  with [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify). All other dependencies have been updated to the latest builds.
+This fork keeps the Grunt child process and config file structure but it updates to the 0.4.0 *Gruntfile.js* file syntax, replaces the concat and min tasks with [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) and updates all other dependencies to the latest builds.
 
 ## What is different?
 
