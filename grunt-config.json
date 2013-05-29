@@ -1,0 +1,28 @@
+{
+  "uglify": {
+    "scripts": {
+        "files": {
+          "dist/js/all.min.js": [
+            "out/js/vendor/jquery-1.7.2.js",
+            "out/js/vendor/modernizr-latest.js",
+            "out/js/app.js"
+          ]
+        },
+        "options": {
+          "mangle": true,
+          "compress": true
+        }
+    }
+  },
+  "cssmin": { 
+    "minify": {
+      "expand": true,
+      "cwd": "out/css/",
+      "src": ["*.css", "!*.min.css"],
+      "dest": "dist/css/",
+      "ext": ".min.css",
+      "report": "gzip"
+    }
+  }
+
+}

@@ -1,0 +1,48 @@
+{
+  "name": "docpad-grunt-skeleton",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A vanilla docpad skeleton with Grunt CSS/JS minification based on Luke Karrys' HTML5 Boilerplate with Grunt Docpad skeleton",
+  "homepage": "https://github.com/ourmaninamsterdam/docpad-grunt-skeleton",
+  "keywords": [
+    "docpad-skeleton",
+    "docpad",
+    "website",
+    "skeleton",
+    "grunt"
+  ],
+  "author": [
+    "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+    "Justin Perry (https://github.com/ourmaninamsterdam)"
+  ],
+  "maintainers": [
+    "Luke Karrys (http://lukekarrys.com)",
+    "Justin Perry (https://github.com/ourmaninamsterdam)"
+  ],
+  "bugs": {
+    "url": "https://github.com/ourmaninamsterdam/docpad-grunt-skeleton/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ourmaninamsterdam/docpad-grunt-skeleton.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "docpad": "6.x",
+    "docpad-plugin-coffeescript": "2.x",
+    "docpad-plugin-eco": "2.x",
+    "docpad-plugin-marked": "2.x",
+    "docpad-plugin-partials": "2.x",
+    "docpad-plugin-text": "2.x",
+    "bal-util": "~2.1.0",
+    "underscore": "~1.4.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-cssmin": "~0.6.1"
+  }
+}
