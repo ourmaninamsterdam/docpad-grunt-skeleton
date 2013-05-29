@@ -1,8 +1,9 @@
-# A vanilla Docpad skeleton with Grunt build, based on [HTML5 Boilerplate with Grunt](https://github.com/lukekarrys/html5-boilerplate.docpad)
-Bare essentials for building a modern website with best practices
+# A vanilla Docpad skeleton with Grunt build, based on [Luke Karrys' HTML5 Boilerplate with Grunt](https://github.com/lukekarrys/html5-boilerplate.docpad)
+
+This is an adaptation of Luke Karrys' H5BP [Luke Karrys' HTML5 Boilerplate with Grunt](https://github.com/lukekarrys/html5-boilerplate.docpad), without H5BP.
 
 ## Why the fork?
-This fork keeps the Grunt child process and config file structure but updates them with the 0.4.0 *Gruntfile.js* layout. Concat and min have been replaced  with [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify). All other dependencies have been update to the latest builds.
+This fork keeps the Grunt child process and config file structure but updates them with the updated 0.4.0 *Gruntfile.js* file syntax. Concat and min have been replaced  with [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify). All other dependencies have been updated to the latest builds.
 
 ## What is different?
 
@@ -13,7 +14,7 @@ This fork keeps the Grunt child process and config file structure but updates th
 - This is the Grunt file. It runs `initConfig` with the `grunt-config.json` object. It also registers a `default` task with all the keys from the config file.
 
 ##### `docpad.coffee`
--  **These have been commented out until I have time to update these to work with the Uglify task syntax** I added the helper functions [`getGruntedStyles`]() and [`getGruntedScripts`](). These functions will return all the compiled assets that contain `.min.(css|js)` with the correct base path.
+-  **These have been commented out until I have time to update these to work with the Uglify task syntax**. I added the helper functions [`getGruntedStyles`]() and [`getGruntedScripts`](). These functions will return all the compiled assets that contain `.min.(css|js)` with the correct base path.
 - A [`writeAfter`]() DocPad event. It is based on [this gist](https://gist.github.com/3898915), with some additional functionality. It will run the `default` grunt command. Then it will use your `grunt-config.json` to delete the `src` files since they are no longer needed. It will also delete any empty directories in the 'out/' directory.
 
 ##### `layouts/default.html.eco`
